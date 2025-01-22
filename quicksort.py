@@ -1,34 +1,35 @@
 import random
 
 def quicksort(arr):
-    # If the array has 1 or no elements, it's already sorted, so just return it.
+    
+    #check if arr less tha1 1 
     if len(arr) <= 1:
         return arr
 
-    # Pick a random element as the pivot.
+    #choose random value
     pivot = random.choice(arr)
 
-    # Create an empty list for numbers smaller than the pivot.
+    #store the i value in left if it is less than pivot
     left = []
     for i in arr:
         if i < pivot:
             left.append(i)
 
-    # Create an empty list for numbers larger than the pivot.
+    #store in right if it is higher than pivot 
     right = []
     for i in arr:
         if i > pivot:
             right.append(i)
 
-    # Create a list for numbers that are equal to the pivot.
+    #store in middle if it is equal to pivot
     middle = []
     for i in arr:
         if i == pivot:
             middle.append(i)
 
-    # Recursively sort the left and right parts and combine them with the pivot values.
+
+    #using quicksort function do the same thing again and again until the array sorted 
     return quicksort(left) + middle + quicksort(right)
 
-# Test the quicksort function
 arr = [1]
 print(quicksort(arr))
