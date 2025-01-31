@@ -12,4 +12,4 @@ def isPalindrome(s):
             nonalnum_char += char
     return nonalnum_char == nonalnum_char[::-1]
 
-print(isPalindrome("121"))
+print(isPalindrome("121mnk"))
