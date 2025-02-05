@@ -13,6 +13,7 @@ def switchCase(choice, arr):
                 # area of ractangle formula (L*B)
                 return arr[0]*arr[1]
             case 3:
+                
                 return 'invalid number'
              
 result1 = switchCase(1, [5]) 
