@@ -7,10 +7,10 @@ def rev_pyrammid(n):
             print(" ",end="")
 
         # PRINT  *
-        for j in range(0,n-2*i+2,1):
+        for j in range(0,2*(n-i)-1,1):
             print("*",end="")
 
-        # space
+        # space can ignore this line did this to understand how space work during practice
         for s in range(0,i,1): 
             print(" ",end="")
 
